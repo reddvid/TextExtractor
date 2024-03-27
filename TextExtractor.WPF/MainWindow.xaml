@@ -7,13 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <ComboBox x:Name="DisplaysList" 
-                  ItemsSource="{Binding DisplayList}" 
-                  VerticalAlignment="Top" SelectedItem="{Binding SelectedDisplay, Mode=TwoWay}"/>
-        <Image Source="{Binding DisplayImage}" Grid.Row="1"/>
+        <ListView ItemsSource="{Binding DisplayList}"
+                  SelectedItem="{Binding SelectedDisplay, Mode=TwoWay}"
+                  x:Name="DisplaysList" VerticalAlignment="Top"
+                  Height="200"/>
+        <Button x:Name="RefreshShotBtn"
+                Content="Screenshot"
+                IsEnabled="{Binding HasSelectedDisplay}"
+                Width="120" VerticalAlignment="Bottom"
+                Command="{Binding DisplayScreenshotCommand}" />
+        <Image Source="{Binding DisplayImage}"
+               Grid.Column="1"
+               Margin="24,12" />
+        <TextBox Text="{Binding ExtractedText}"
+                 Grid.Row="2"
+                 Grid.Column="1"
+                 IsReadOnly="True" />
     </Grid>
 </Window>

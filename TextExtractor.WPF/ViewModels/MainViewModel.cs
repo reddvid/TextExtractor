@@ -12,16 +12,18 @@ public partial class MainViewModel : ObservableObject
     private IEnumerable<Screen> Screens { get; set; } = [];
 
     [ObservableProperty] private ObservableCollection<string> _displayList = [];
-    [ObservableProperty] private string? _selectedDisplay;
-    [ObservableProperty] private BitmapSource _displayImage;
 
-    partial void OnSelectedDisplayChanged(string? value)
-    {
-        DisplayScreenshot();
-    }
+    [ObservableProperty] [NotifyPropertyChangedFor(nameof(HasSelectedDisplay))]
+    private string? _selectedDisplay;
+
+    [ObservableProperty] private BitmapSource? _displayImage;
+
+    public bool HasSelectedDisplay => !string.IsNullOrWhiteSpace(SelectedDisplay);
 
     public MainViewModel()
     {
+        SelectedDisplay = null;
+        
         RefreshDisplayList();
     }
 
