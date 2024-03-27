@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextExtractor.WPF", "TextExtractor.WPF\TextExtractor.WPF.csproj", "{D42182CD-BA19-4C09-8799-3D453DFB32E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextExtractor.Common", "TextExtractor.Common\TextExtractor.Common.csproj", "{732FBE58-D243-4511-8BC0-FC90BC46B1CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{D42182CD-BA19-4C09-8799-3D453DFB32E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D42182CD-BA19-4C09-8799-3D453DFB32E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D42182CD-BA19-4C09-8799-3D453DFB32E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{732FBE58-D243-4511-8BC0-FC90BC46B1CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732FBE58-D243-4511-8BC0-FC90BC46B1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732FBE58-D243-4511-8BC0-FC90BC46B1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732FBE58-D243-4511-8BC0-FC90BC46B1CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
