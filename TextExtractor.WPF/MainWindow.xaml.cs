@@ -17,7 +17,7 @@ namespace TextExtractor.WPF;
 /// </summary>
 public partial class MainWindow : Window
 {
-    private MainViewModel ViewModel { get; } = new MainViewModel();
+    private MainViewModel ViewModel { get; } = new();
     public MainWindow()
     {
         InitializeComponent();
