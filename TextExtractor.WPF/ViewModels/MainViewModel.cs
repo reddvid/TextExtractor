@@ -49,10 +49,10 @@ public partial class MainViewModel : ObservableObject
 
         Console.WriteLine(selectedMonitor);
 
-        var left = selectedMonitor.Bounds.X;
-        var top = selectedMonitor.Bounds.Y;
-        var width = selectedMonitor.Bounds.Width;
-        var height = selectedMonitor.Bounds.Height;
+        var left = selectedMonitor.Bounds.X + 48;
+        var top = selectedMonitor.Bounds.Y + 84;
+        var width = 620; //selectedMonitor.Bounds.Width;
+        var height = 240; //selectedMonitor.Bounds.Height;
 
         using var screenBmp = new Bitmap(width, height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
         using var bmpGraphics = Graphics.FromImage(screenBmp);
