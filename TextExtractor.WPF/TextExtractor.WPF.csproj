@@ -11,6 +11,54 @@
 
     <ItemGroup>
       <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+      <PackageReference Include="PaddleOCRSharp" Version="4.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="en\eng.traineddata" />
+      <Content Include="en\eng.traineddata">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="en\en_dict.txt" />
+      <Content Include="en\en_dict.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="en\ch_ppocr_mobile_v2.0_cls_infer\inference.pdiparams" />
+      <Content Include="en\ch_ppocr_mobile_v2.0_cls_infer\inference.pdiparams">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="en\ch_ppocr_mobile_v2.0_cls_infer\inference.pdmodel" />
+      <Content Include="en\ch_ppocr_mobile_v2.0_cls_infer\inference.pdmodel">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="en\ch_ppocr_mobile_v2.0_cls_infer\inference.pdiparams.info" />
+      <Content Include="en\ch_ppocr_mobile_v2.0_cls_infer\inference.pdiparams.info">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="en\en_PP-OCRv3_det_infer\inference.pdiparams" />
+      <Content Include="en\en_PP-OCRv3_det_infer\inference.pdiparams">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="en\en_PP-OCRv3_det_infer\inference.pdmodel" />
+      <Content Include="en\en_PP-OCRv3_det_infer\inference.pdmodel">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="en\en_PP-OCRv3_det_infer\inference.pdiparams.info" />
+      <Content Include="en\en_PP-OCRv3_det_infer\inference.pdiparams.info">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="en\en_PP-OCRv3_rec_infer\inference.pdiparams" />
+      <Content Include="en\en_PP-OCRv3_rec_infer\inference.pdiparams">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="en\en_PP-OCRv3_rec_infer\inference.pdmodel" />
+      <Content Include="en\en_PP-OCRv3_rec_infer\inference.pdmodel">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="en\en_PP-OCRv3_rec_infer\inference.pdiparams.info" />
+      <Content Include="en\en_PP-OCRv3_rec_infer\inference.pdiparams.info">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>

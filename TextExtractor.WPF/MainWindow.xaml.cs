@@ -78,7 +78,7 @@ public partial class MainWindow : Window
                                 break;
                             }
                             
-                            ViewModel.DisplayScreenshotCommand.Execute(true);
+                            ViewModel.DisplayScreenshotCommand.Execute(default);
                         }
 
                         handled = true;
