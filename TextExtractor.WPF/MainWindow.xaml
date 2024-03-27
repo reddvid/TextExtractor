@@ -7,10 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="DisplaysList">
-            
-        </ComboBox>
-        <Frame x:Name="PreviewFrame">
+        <ComboBox x:Name="DisplaysList" 
+                  ItemsSource="{Binding DisplayList}" 
+                  VerticalAlignment="Top"/>
+        <Frame x:Name="PreviewFrame" 
+               Height="400" 
+               VerticalAlignment="Bottom">
         </Frame>
     </Grid>
 </Window>

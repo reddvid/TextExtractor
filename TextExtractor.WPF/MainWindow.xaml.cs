@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TextExtractor.WPF.ViewModels;
 
 namespace TextExtractor.WPF;
 
@@ -16,8 +17,11 @@ namespace TextExtractor.WPF;
 /// </summary>
 public partial class MainWindow : Window
 {
+    private MainViewModel ViewModel { get; } = new MainViewModel();
     public MainWindow()
     {
         InitializeComponent();
+
+        DataContext = ViewModel;
     }
 }
