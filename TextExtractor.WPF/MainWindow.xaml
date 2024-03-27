@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <ComboBox x:Name="DisplaysList" 
                   ItemsSource="{Binding DisplayList}" 
                   VerticalAlignment="Top" SelectedItem="{Binding SelectedDisplay, Mode=TwoWay}"/>
-        <Frame x:Name="PreviewFrame" 
-               Height="400" 
-               VerticalAlignment="Bottom">
-        </Frame>
+        <Image Source="{Binding DisplayImage}" Grid.Row="1"/>
     </Grid>
 </Window>
