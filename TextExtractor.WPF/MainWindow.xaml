@@ -9,7 +9,7 @@
     <Grid>
         <ComboBox x:Name="DisplaysList" 
                   ItemsSource="{Binding DisplayList}" 
-                  VerticalAlignment="Top"/>
+                  VerticalAlignment="Top" SelectedItem="{Binding SelectedDisplay, Mode=TwoWay}"/>
         <Frame x:Name="PreviewFrame" 
                Height="400" 
                VerticalAlignment="Bottom">
