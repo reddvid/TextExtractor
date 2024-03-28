@@ -76,6 +76,13 @@ public partial class MainViewModel : ObservableObject
         var questTitle = ExtractText(imageFile);
 
         CreateTextFile(questTitle);
+
+        DeleteImageFile(imageFile);
+    }
+
+    private void DeleteImageFile(string imageFile)
+    {
+        File.Delete(imageFile);
     }
 
     private void CreateTextFile(string questTitle)
@@ -116,14 +123,9 @@ public partial class MainViewModel : ObservableObject
         try
         {
             OCRParameter oCRParameter = new OCRParameter();
-            // oCRParameter.max_side_len = 620;
             PaddleOCREngine engine = new PaddleOCREngine(config, oCRParameter);
             OCRResult ocrResult = engine.DetectText(filePath);
 
-            // PaddleOCREngine engine = new PaddleOCREngine(config);
-            // {
-            //     ocrResult = engine.DetectText(filePath);
-            // }
             if (ocrResult != null)
             {
                 Console.WriteLine(ocrResult.Text);
