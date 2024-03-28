@@ -8,6 +8,6 @@ I was trying out Vertical streaming to YouTube (and Facebook) while playing Assa
 
 This was a quick coding using Tesseract OCR and WPF so every value is hardcoded.
 
-## Demo
+## Demo (Output Video)
 
-<video width="480" height="720" controls src="https://github.com/reddvid/TextExtractor/blob/main/assets/demo.mp4" type="video/mp4" />
+<video width="480" height="720" controls src="https://github.com/reddvid/TextExtractor/blob/main/assets/demo.mp4?raw=true" type="video/mp4" />
